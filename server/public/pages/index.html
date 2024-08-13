@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body id="body-pd">
+    <header class="header" id="header">
+      <div class="header_toggle">
+        <i class="bx bx-menu fa-solid fa-bars" id="header-toggle"></i>
+      </div>
+      <div class="header_img">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.IhiqRWFamp-enjV2csKdzwHaE8&pid=Api&P=0&h=220" alt="">
+      </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+      <nav class="nav">
+        <div>
+          <div class="nav_list">
+            <a href="/" class="nav_link active">
+              <i class="bx bx-grid-alt nav_icon"></i>
+              <span class="nav_name">Əməliyyat günü</span>
+            </a>
+            <a href="template" class="nav_link">
+              <i class="bx bx-user nav_icon"></i>
+              <span class="nav_name">Şablonlar</span>
+            </a>
+            <a href="closed" class="nav_link">
+              <i class="bx bx-message-square-detail nav_icon"></i>
+              <span class="nav_name">Bağlanmış gün</span>
+            </a>
+            <a href="current" class="nav_link">
+              <i class="bx bx-bookmark nav_icon"></i>
+              <span class="nav_name">Cari gün</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="height-100 bg-light">
+        <div class="module">
+            <h3>Əməliyyat günlərin siyahısı:</h3>
+            <div class="list">
+              <div class="inner-list">                
+                <ul>
+                  <li>
+                      <p>28 AUG 2023 - Current</p>
+                  </li>
+                  <li>
+                      <p>27 AUG 2023 - Closed</p>
+                  </li>
+                  <li>
+                      <p>26 AUG 2023 - Closed</p>
+                  </li>
+                  <li>
+                      <p>25 AUG 2023 - Archived</p>
+                  </li>
+                  <li class="more">
+                      <p>more...</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="module__buttons">
+              <button id="select-btn">Seç</button>
+              <button id="add-btn">Əlavə et</button>
+            </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="popup" id="popup">
+        <div class="popup_name">
+          <label for="">Şablonun adı:</label>
+          <input type="text" placeholder="Şablon adı" />
+        </div>
+        <div class="popup_template">
+          <label for="">Prosess 1:</label>
+          <input type="text" placeholder="Prosess 1" />
+        </div>
+        <div class="popup_date">
+          <label for="">Prosess 2:</label>
+          <input type="text" placeholder="Prosess 2" />
+        </div>
+        <div class="popup_buttons">
+          <button id="add-popup-btn">Əlavə et</button>
+          <button id="cancel-popup-btn">İmtina</button>
+        </div>
+      </div>
+      <div class="overlay hidden" id="overlay"></div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

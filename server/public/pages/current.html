@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body id="body-pd">
+    <header class="header" id="header">
+      <div class="header_toggle">
+        <i class="bx bx-menu fa-solid fa-bars" id="header-toggle"></i>
+      </div>
+      <div class="header_img">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.IhiqRWFamp-enjV2csKdzwHaE8&pid=Api&P=0&h=220" alt="">
+      </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+      <nav class="nav">
+        <div>
+          <div class="nav_list">
+            <a href="/" class="nav_link active">
+              <i class="bx bx-grid-alt nav_icon"></i>
+              <span class="nav_name">Əməliyyat günü</span>
+            </a>
+            <a href="template" class="nav_link">
+              <i class="bx bx-user nav_icon"></i>
+              <span class="nav_name">Şablonlar</span>
+            </a>
+            <a href="closed" class="nav_link">
+              <i class="bx bx-message-square-detail nav_icon"></i>
+              <span class="nav_name">Bağlanmış gün</span>
+            </a>
+            <a href="current" class="nav_link">
+              <i class="bx bx-bookmark nav_icon"></i>
+              <span class="nav_name">Cari gün</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="height-100 bg-light">
+        <div class="table">
+            <h4>Əməliyyat günlərinin idarəedilməsi modulu</h4>
+            <p>28 AUG 2023 - Cari gün</p>
+            <div class="table-parent">
+              <table class="table-striped table-bordered text-center">
+                  <thead>
+                      <tr>
+                          <th>ƏG</th>
+                          <th>Şablon</th>
+                          <th>Period</th>
+                          <th>Başlama vaxtı</th>
+                          <th>Bitmə vaxtı</th>
+                          <th>Auto/Manual</th>
+                          <th>Status</th>
+                          <th>İcraçı</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td data-label="">28 AUG 2023 - Closed</td>
+                          <td data-label="">Default</td>
+                          <td data-label="">Start Day</td>
+                          <td data-label="">09:00</td>
+                          <td data-label="">09:01</td>
+                          <td data-label="">Manual</td>
+                          <td data-label="">Done</td>
+                          <td data-label="">SQURBANLI</td>
+                      </tr>
+                      <tr>
+                          <td data-label="">28 AUG 2023 - Closed</td>
+                          <td data-label="">Default</td>
+                          <td data-label="">DAY_PAYMENTS_FOR_PAC</td>
+                          <td data-label="">09:02</td>
+                          <td data-label="">09:12</td>
+                          <td data-label="">Manual</td>
+                          <td data-label="">Done</td>
+                          <td data-label="">SQURBANLI</td>
+                      </tr>
+                      <tr style="background-color: #AFF4C6;">
+                          <td data-label="">28 AUG 2023 - Closed</td>
+                          <td data-label="">Default</td>
+                          <td data-label="">MX</td>
+                          <td data-label="">09:13</td>
+                          <td data-label="">10:13</td>
+                          <td data-label="">Manual</td>
+                          <td data-label="">Done</td>
+                          <td data-label="">SQURBANLI</td>
+                      </tr>
+                      <tr>
+                          <td data-label="">28 AUG 2023 - Closed</td>
+                          <td data-label="">Default</td>
+                          <td data-label="">SERVİCE_FEE</td>
+                          <td data-label="">10:14</td>
+                          <td data-label="">10:44</td>
+                          <td data-label="">Manual</td>
+                          <td data-label="">Done</td>
+                          <td data-label="">SQURBANLI</td>
+                      </tr>
+                      <tr>
+                          <td data-label="">28 AUG 2023 - Closed</td>
+                          <td data-label="">Default</td>
+                          <td data-label="">BENEFİCİARY</td>
+                          <td data-label="">10:45</td>
+                          <td data-label="">10:50</td>
+                          <td data-label="">Manual</td>
+                          <td data-label="">Done</td>
+                          <td data-label="">SQURBANLI</td>
+                      </tr>
+                      <tr style="background-color: #FBF0E2;">
+                          <td data-label="">28 AUG 2023 - Closed</td>
+                          <td data-label="">Default</td>
+                          <td data-label="">DAY_PAYMENTS_FROM_BANK</td>
+                          <td data-label="">10:52</td>
+                          <td data-label="">  </td>
+                          <td data-label="">Manual</td>
+                          <td data-label="">In progress</td>
+                          <td data-label="">SQURBANLI</td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+        </div>
+    </div>
+
+     
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
